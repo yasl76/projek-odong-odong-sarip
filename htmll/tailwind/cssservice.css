@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20;
+    padding: 20;
+    background-image: url(7137741.webp);
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.5); /* Transparansi 50% */
+    backdrop-filter: blur(10px); /* Blur latar belakang */
+    position: fixed; /* Agar navbar tetap di atas halaman saat di-scroll */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Pastikan navbar di atas konten lainnya */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:hover,
+nav ul li.active a {
+    background-color: rgb(255, 0, 0); /* Warna latar belakang saat hover atau aktif dengan transparansi */
+    border-bottom: 1px solid white;
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.4); /* Warna latar belakang saat item aktif dengan transparansi lebih tinggi */
+    font-weight: bold; /* Menebalkan teks untuk menunjukkan aktif */
+}
+
+main {
+    padding: 60px 20px; /* Memberikan ruang di bawah navbar tetap terlihat */
+}

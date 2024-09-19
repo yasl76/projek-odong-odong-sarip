@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20;
+    padding: 20;
+    
+    background-size: cover;
+    background-attachment: scroll;
+    position: relative;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.05); /* Transparansi 50% */
+    backdrop-filter: blur(10px); /* Blur latar belakang */
+    position: fixed; /* Agar navbar tetap di atas halaman saat di-scroll */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Pastikan navbar di atas konten lainnya */
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-decoration: antiquewhite;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+nav ul li a:hover,
+nav ul li.active a {
+    background-color: rgba(255, 0, 0, 0.226); /* Warna latar belakang saat hover atau aktif dengan transparansi */
+    border-bottom: 1px solid white;
+
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.4); /* Warna latar belakang saat item aktif dengan transparansi lebih tinggi */
+    font-weight: bold; /* Menebalkan teks untuk menunjukkan aktif */
+}
+
+h1 {
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 100px;
+    color: aquamarine;
+
+
+}
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: #7fffd4;
+    margin-top: 5px;
+    font-size: medium;
+
+}
+.video-latar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Pastikan video berada di latar belakang */
+}
+
+#video-latar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Pastikan video menutupi seluruh kontainer */
+}
+.main{
+    position: absolute;
+    z-index: 1; /* Pastikan konten utama berada di atas video */
+    color: white; /* Sesuaikan warna teks agar terlihat jelas */
+    text-align: center;
+    padding: 20px;
+
+}
+
+    

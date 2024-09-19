@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20;
+    padding: 20;
+    
+    background-size: cover;
+    background-attachment: scroll;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0; /* Background color */
+
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.5); /* Transparansi 50% */
+    backdrop-filter: blur(10px); /* Blur latar belakang */
+    position: fixed; /* Agar navbar tetap di atas halaman saat di-scroll */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Pastikan navbar di atas konten lainnya */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:hover,
+nav ul li.active a {
+    border-bottom: 1px white;
+    background-color: rgba(255, 255, 255, 0.2); /* Warna latar belakang saat hover atau aktif dengan transparansi */
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.4); /* Warna latar belakang saat item aktif dengan transparansi lebih tinggi */
+    font-weight: bold; /* Menebalkan teks untuk menunjukkan aktif */ 
+    border-bottom: 1px solid white;
+}
+
+main {
+    padding: 60px 20px; /* Memberikan ruang di bawah navbar tetap terlihat */
+}
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(7137741.webp);
+}
+
+.social-media {
+    display: flex;
+    gap: 20px; /* Spacing between icons */
+}
+
+.social-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333; /* Default background color */
+    color: #fff; /* Icon color */
+    text-align: center;
+    line-height: 50px; /* Center the icon vertically */
+    font-size: 24px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: #444; /* Darker color on hover */
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+/* Specific colors for each social media */
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.instagram {
+    background-color: #e1306c;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+/* Font Awesome or other icon fonts */
+.social-icon::before {
+    content: ''; /* You would use an icon font or SVG for actual icons */
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Icons */
+.facebook::before {
+    background-image: url('path/to/facebook-icon.png'); /* Replace with your icon image */
+}
+
+.twitter::before {
+    background-image: url('path/to/twitter-icon.png'); /* Replace with your icon image */
+}
+
+.instagram::before {
+    background-image: url('path/to/instagram-icon.png'); /* Replace with your icon image */
+}
+
+.linkedin::before {
+    background-image: url('path/to/linkedin-icon.png'); /* Replace with your icon image */
+}
+
+
